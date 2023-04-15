@@ -1,4 +1,4 @@
-let colors = {
+let color2 = {
     'grey-darkest': '#3d4852',
     'grey-darker': '#606f7b',
     'grey-dark': '#8795a1',
@@ -208,18 +208,24 @@ let colors = {
     },
 };
 
+const colors = require('tailwindcss/colors')
 module.exports = {
     prefix: '',
     important: false,
     separator: ':',
     theme: {
+        extend: {
+            colors: {
+                xbz: '#0070f3',
+            }
+        },
         screens: {
             sm: '640px',
             md: '768px',
             lg: '1024px',
             xl: '1280px',
         },
-        colors: colors,
+        
         spacing: {
             px: '1px',
             '0': '0',
